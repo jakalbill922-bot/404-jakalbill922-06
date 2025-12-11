@@ -47,7 +47,7 @@ class TrellisVGGTGaussianProcessor:
         outputs = self._image_to_3d_pipeline.run(
             [image_no_bg],
             num_samples=1,
-            sparse_structure_sampler_params={"steps": 30, "cfg_strength": 7.5},
+            sparse_structure_sampler_params={"steps": 15, "cfg_strength": 7.0},
             slat_sampler_params={"steps": 25, "cfg_strength": 3},
             mode=get_config("trellis_multi_mode"),
         )
